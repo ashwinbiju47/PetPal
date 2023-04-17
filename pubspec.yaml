@@ -1,0 +1,44 @@
+name: petpal
+description: A new Flutter project.
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ">=2.19.6 <3.0.0"
+
+dependencies:
+  flutter_signin_button: ^2.0.0
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  google_fonts: ^2.1.0
+
+flutter:
+  uses-material-design: true
+    
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: fonts/Poppins-Regular.ttf
+        - asset: fonts/Poppins-Black.ttf
+          weight: 900
+
+    - family: Inter
+      fonts:
+        - asset: fonts/Inter-Regular.ttf
+        - asset: fonts/Inter-Bold.ttf
+          weight: 500
+       
+
+
+flutter_svg: ^1.1.0
+
+  
+        
