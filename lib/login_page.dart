@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:petpal/continue_as.dart';
+
+import 'const.dart';
+
 //import 'package:google_fonts/google_fonts.dart';
 
 class LoginPage extends StatelessWidget {
+  const LoginPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,16 +38,8 @@ class LoginPage extends StatelessWidget {
                 ),
 
 //title
-                const Padding(
-                  padding: EdgeInsets.all(24.0),
-                  child: Text(
-                    'Petpal Cares\nYour Pet!',
-                    style: TextStyle(
-                      fontFamily: 'Poppins',
-                      fontWeight: FontWeight.w900,
-                      fontSize: 42,
-                    ),
-                  ),
+                const CustomText(
+                  text: 'Petpal Cares\nYour Pet!',
                 ),
 
                 SizedBox(
@@ -63,7 +60,8 @@ class LoginPage extends StatelessWidget {
                         // Your button action here
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => ContinueAs()),
+                          MaterialPageRoute(
+                              builder: (context) => const ContinueAs()),
                         );
                       },
                       icon: Padding(
@@ -88,7 +86,9 @@ class LoginPage extends StatelessWidget {
                         foregroundColor: Colors.black, // foreground color
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(40.0),
-                          side: BorderSide(color: Color.fromARGB(255, 147, 147, 147), width: 1.0),
+                          side: const BorderSide(
+                              color: Color.fromARGB(255, 147, 147, 147),
+                              width: 1.0),
                         ),
                       ),
                     ),

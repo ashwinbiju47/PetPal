@@ -3,10 +3,12 @@ import 'package:petpal/login_page.dart';
 //import 'package:google_fonts/google_fonts.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Poppins',
         primaryColor: Colors.yellow,
       ),
-      home: LoginPage(),
+      home: const LoginPage(),
     );
   }
 }
