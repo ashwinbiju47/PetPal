@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Customer_p1.dart';
 import 'const.dart';
 
 class ContinueAs extends StatelessWidget {
@@ -46,6 +47,11 @@ class ContinueAs extends StatelessWidget {
                   buttonName: 'Continue as Customer',
                   onPressed: () {
                     // Your button action here
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const CustomerP1()),
+                    );
                   },
                 ),
 
