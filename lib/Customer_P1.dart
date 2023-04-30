@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:petpal/customer_homepage.dart';
 import 'const.dart';
 
 class CustomerP1 extends StatelessWidget {
@@ -8,7 +8,7 @@ class CustomerP1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     backgroundColor:
-    Color.fromARGB(255, 255, 255, 255);
+    Colors.white;
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
@@ -49,7 +49,7 @@ class CustomerP1 extends StatelessWidget {
                 SizedBox(
                   height: 5.0,
                 ), // Add spacing between input boxes and other widgets
-            Padding(
+                Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16.0),
                   child: Container(
                     decoration: BoxDecoration(
@@ -101,6 +101,12 @@ class CustomerP1 extends StatelessWidget {
                   buttonName: 'Register as a Customer',
                   onPressed: () {
                     // Your button action here
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const Homepage()),
+                    );
+
                   },
                 ),
               ]),
